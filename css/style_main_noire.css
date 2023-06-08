@@ -1,0 +1,253 @@
+main{
+    margin:0%;
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+
+@font-face {
+    font-family: "Evil Empire";
+    src: local("Evil Empire"),
+    url("Evil Empire");
+}
+
+/************* acceuil ****************/
+.header{
+    background-image: url(../image/bg.png);
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+}
+.test{
+padding: 100px;
+}
+.telecommande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chiffre{
+    color: #35755e;
+    font-size: large;
+    width: 5%;
+    transform: translateX(-33px);
+}
+.carte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-angled{
+    clip-path: polygon(5% 0%, 95% 0%, 100% 3%, 100% 97%, 95% 100%, 5% 100%, 0% 97%, 0% 3%);
+}
+footer{
+    padding-top: 1%;
+}
+/************* fin acceuil ****************/
+
+/************* catalogue ****************/
+.catalogue{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.avis{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 20px;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+/************* fin catalogue ****************/
+
+/************* form ****************/
+h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+.form{
+    background-color: #add0c0;
+    margin: 2%;
+    padding-bottom: 1%;
+}
+/************* fin form ****************/
+
+/************* panier ****************/
+table {
+    border : collapse;
+    width : 100%;
+    margin-top: 1px;
+}
+table tr:nth-child(odd) {
+    background-color: #efeefb;
+}
+  
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.titre{
+    font-size: large;
+}
+.qnt{
+    width: 10%;
+}
+/************* fin panier ****************/
+
+/************* payer ****************/
+h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 1%;
+}
+.payer{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 40%;
+}
+/************* fin payer ****************/
+
+/************** Catégories *************/
+.carte-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description{
+    text-align: center;
+    font-size: large;
+    padding-top: 1%;
+}
+.cnxn{
+    transform: translateY(-10px);
+}
+.extra{
+    padding: 3%;
+}
+/************** fin Catégories *************/
+
+/************** Mentions légales *******/
+.cgv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cgv_contenu{
+    background-color: #35755e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.ML{
+    background: linear-gradient(120deg,#db6954 0%,#2b9469 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5%;
+    padding-top: 1%;
+}
+/************** fin Mentions légales *******/
+
+/******************************* Couleur ****************/
+.rouge_fonce {
+    background: rgba(194, 41, 51, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.rouge_clair {
+    background-color: #e8b4ae;
+}
+
+.rouge_moyen {
+    background-color: #db6954;
+}
+
+.teal_fonce {
+    background-color: #2b9469;
+}
+
+.teal_clair {
+    background-color: #b5ead6;
+    color: #b5ead6;
+}
+.vert{
+    background-color: #2b9469;
+    color: white;   
+}
+/***************************** fin Couleur ***************/
+
+/**** Boutons *****/
+/* Bouton me deconnecter */
+.button-11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-11:focus {
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+/* fin Bouton me deconnecter */
+
+/* bouton Backoffice */
+.button-38 {
+  background-color: #e8b4ae;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #e8b4ae solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-38:hover {
+  background-color: #e8b4ae;
+}
+.button-38:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.button-38:focus-visible {
+  box-shadow: none;
+}
+.button-1{
+    height: 28px;
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    border-color: #E8E8E8;
+    transform: translateY(7px);
+}
+/* fin bouton Backoffice */
+/************************* fin Boutons ********************/
